@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: tripcasegettheretrip_database_development
+  pool: 5
+  timeout: 5000
+test:
+  adapter: postgresql
+  database: tripcasegettheretrip_database_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: tripcasegettheretrip_database_production
+  pool: 5
+  timeout: 5000

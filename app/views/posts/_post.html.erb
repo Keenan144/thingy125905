@@ -1,0 +1,18 @@
+<xmp>
+<?xml version="1.0" encoding="UTF-8"?>
+<ImportItineraryRequest xmlns="http://tripcase.com/api/partner" UserEmail="<%= @post.email_address %>" Version="1.0">
+ <PartnerCredentials AuthToken="773ab4aa78f00de5e9401573e41bc8809a65cf6fd3f964bcfd56e322edf276363d338930132270d7a513925ec90fae6c01894cbe61236e8ffa5cf5866dd3d1f3" />
+ <Itinerary Reference="<%= @post.itinerary_reference %>"
+            ReferenceTerm="GT Trip Id" Name="<%= @post.name %>" GTSiteName="sample site" GTSubsiteName="sample subsite" ClientId="CID002">
+   <Air AirlineCode="<%= @post.airline_code %>" ConfirmationNumber="<%= @post.confirmation_number %>" FlightNumber="<%= @post.flight_number %>" ArrivalDateTime="<%= @post.arrival_date_time %>" DepartureDateTime="<%= @post.departure_date_time %>">
+     <DepartureAirport Code="<%= @post.departure_airport %>"/>
+     <ArrivalAirport Code="<%= @post.arrival_airport %>"/>
+     <Seats>
+       <Seat/>
+       <Seat/>
+     </Seats>
+     <LoyaltyMemberships/>
+   </Air>
+ </Itinerary>
+</ImportItineraryRequest>
+</xmp>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImportItineraryRequest xmlns="http://tripcase.com/api/partner" UserEmail="nobody.deeplink2@sabre.com" Version="1.0">
+ <PartnerCredentials AuthToken="773ab4aa78f00de5e9401573e41bc8809a65cf6fd3f964bcfd56e322edf276363d338930132270d7a513925ec90fae6c01894cbe61236e8ffa5cf5866dd3d1f3" />
+ <Itinerary Reference="<%= @post.itinerary_reference %>"
+            ReferenceTerm="GT Trip Id" Name="<%= @post.name %>" GTSiteName="sample site" GTSubsiteName="sample subsite" ClientId="CID002">
+   <Air AirlineCode="F9" ConfirmationNumber="OYTTKA" FlightNumber="121" ArrivalDateTime="2016-10-02T07:08:00.000Z" DepartureDateTime="2016-10-02T06:00:00.000Z">
+     <DepartureAirport Code="DFW"/>
+     <ArrivalAirport Code="DEN"/>
+     <Seats>
+       <Seat/>
+       <Seat/>
+     </Seats>
+     <LoyaltyMemberships/>
+   </Air>
+   <Air AirlineCode="F9" ConfirmationNumber="OYTTKA" FlightNumber="121" ArrivalDateTime="2016-10-02T07:08:00.000Z" DepartureDateTime="2016-10-02T06:00:00.000Z">
+     <DepartureAirport Code="DFW"/>
+     <ArrivalAirport Code="DEN"/>
+     <Seats>
+       <Seat/>
+       <Seat/>
+     </Seats>
+     <LoyaltyMemberships/>
+   </Air>
+ </Itinerary>
+</ImportItineraryRequest>
